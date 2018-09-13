@@ -884,7 +884,7 @@ img:hover {
 @media (max-width:530px) and (orientation:portrait) {
 
     main {
-        height: 450vh;
+        height: auto !important;
         width: 100%;
     }
     hgroup img {
@@ -931,6 +931,15 @@ img:hover {
 
 @media (max-width:768px) and (orientation:portrait) {
 
+
+    hgroup img {
+        max-width: 80px;
+    }
+    hgroup p {
+        left: 90px;
+        padding: 16px;
+    }
+
     main {
         height: 580vh;
     }
@@ -957,9 +966,15 @@ img:hover {
         max-width: 45%;
     }
 
+    #emailbox {
+        margin-top: 100px;
+        height: 60vh;
+    }
+
     #formularz {
         width: 230px;
         height: 280px;
+
     }
     #formularz textarea,
     #formularz input {
@@ -983,7 +998,7 @@ img:hover {
     }
 
     #contact {
-        height: 95vh;
+        height: 90vh;
         font-size: 15px;
         margin-right: 3%;
         margin-top: 3%;
@@ -1008,7 +1023,7 @@ img:hover {
     }
 
     .flex-item {
-        height: 40vh;
+        height: 30vh;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
@@ -1016,7 +1031,46 @@ img:hover {
     .flex-item img {
         display: none;
     }
+
+    #wrapper {
+        height: auto;
+    }
 }
+
+
+
+@media (min-width:769px) and (max-width:1023px) {
+
+    #formularz {
+        margin-top: 150px;
+    }
+
+    hgroup img {
+        max-width: 80px;
+    }
+    hgroup p {
+        left: 90px;
+        padding: 8px;
+        padding-right: 10px;
+        font-size: 22px;
+    }
+    #typedtext {
+        font-size: 30px;
+    }
+
+    #contact {
+        height: 95vh;
+    }
+    #inf img {
+        display: none;
+    }
+
+    #contact h1 {
+        padding-top: 20px;
+    }
+
+}
+
 
 @media (min-width:1024px) and (max-width:1300px) {
 
@@ -1036,11 +1090,28 @@ img:hover {
         padding-bottom: 30px;
     }
     #formularz {
-        margin-top: 150px;
+        margin-top: 250px;
+    }
+
+    hgroup img {
+        max-width: 100px;
+    }
+    hgroup p {
+        left: 110px;
+        padding: 8px;
+        padding-right: 10px;
+        font-size: 30px;
+    }
+    #typedtext {
+        font-size: 40px;
+    }
+
+    #contact {
+        height: 95vh;
     }
 }
 
-*/ @-webkit-keyframes arrow {
+@-webkit-keyframes arrow {
     0% {
         -webkit-transform: translateY(-80px);
         transform: translateY(-80px)
